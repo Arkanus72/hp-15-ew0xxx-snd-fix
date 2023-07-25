@@ -4,6 +4,9 @@ DKMS module for fixing the sound on Linux for HP models:
 - HP Dragonfly Folio 
 - HP Envy 16-h0xxx
 
+# Warning
+This is a fork of the Xoocoon repository that allows you to use these scripts in Fedora. For any questions or modifications go to the original repository at https://github.com/xoocoon/hp-15-ew0xxx-snd-fix. 
+
 ## Purpose
 HP laptop models from 2022 onwards seem to be quite compatible with Linux, except the sound from built-in speakers. This repo contains two DKMS modules for fixing this issue on Debian-based Linux distros and Arch Linux (from kernel 6.1 onwards) and on Fedora and the models listed above.
 
@@ -111,11 +114,4 @@ snd-hda-scodec-cs35l41/0.1, 6.2.0-20-generic, x86_64: installed
 The `dkms` command might yield readelf error messages, but these can be ignored, obviously.
 
 ## Tweaking it for your distro and model
-The main reason why the script only works on Debian-based Linux distros and Arch Linux is the usage of the OS-specific package managers. You might want to replace the apt calls with the package manager of your distro and adjust the package names. Pull requests to make the scripts more versatile are highly appreciated!
-
-Furthermore, to provide a patch for your model, you need its audio subsystem ID, i.e. 0x103c for the manufacturer HP and another 4 hex digits for the actual subsystem. The latter is 0x8a29 in my case. You can find it out with the following command:
-```
-cat /sys/class/sound/hwC0D0/subsystem_id
-```
-
-Generally. a good resource for debugging HDA audio problems is: https://docs.kernel.org/sound/hd-audio/notes.html
+This is a fork of the Xoocoon repository that allows you to use these scripts in Fedora. For any questions or modifications go to the original repository at https://github.com/xoocoon/hp-15-ew0xxx-snd-fix. 
