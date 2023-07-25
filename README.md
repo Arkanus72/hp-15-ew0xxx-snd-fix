@@ -5,7 +5,7 @@ DKMS module for fixing the sound on Linux for HP models:
 - HP Envy 16-h0xxx
 
 ## Purpose
-HP laptop models from 2022 onwards seem to be quite compatible with Linux, except the sound from built-in speakers. This repo contains two DKMS modules for fixing this issue on Debian-based Linux distros and Arch Linux (from kernel 6.1 onwards) and the models listed above.
+HP laptop models from 2022 onwards seem to be quite compatible with Linux, except the sound from built-in speakers. This repo contains two DKMS modules for fixing this issue on Debian-based Linux distros and Arch Linux (from kernel 6.1 onwards) and on Fedora and the models listed above.
 
 It might also work with other HP models. Hardware prerequisites are the Cirrus Logic smart amplifier chipset CSC3551 and the Realtek HDA codec ALC245. Please leave any comments or commit any code to make it work for additional models.
 
